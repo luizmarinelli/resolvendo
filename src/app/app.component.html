@@ -1,12 +1,13 @@
 <table>
   <thead>
     <tr>
-      <th colspan="tamanho1" *ngFor="let item of objetoTeste; index as i">{{objetoTeste[i].periodo}}</th>
+      <th *ngFor="let periodo of objetoTeste">{{periodo.periodo}}</th>
     </tr>
     <tr>
-      <td *ngFor="let item of objetoTeste; index as i">{{objetoTeste[i].produtos[i].produto}}</td>
+      <th *ngFor="let produtos of objetoTeste; index as i">{{produtos.produto[i].produto}}</th>
     </tr>
     <tr>
+      
     </tr>
   </thead>
   <tbody>
